@@ -1,0 +1,32 @@
+package prime.numbers;
+
+import java.util.Scanner;
+
+public class PrimeNumbers {
+    public static void main(String[] args) {
+        int e;
+        boolean IsPrime = true;
+        System.out.println("Input any number : ");
+        Scanner s = new Scanner(System.in);
+        e=s.nextInt();
+        if(e==0 || e==1)
+            IsPrime=false;
+        for(int i = 2; i<e; i++)
+        {
+            if (e%i==0)
+            {
+                IsPrime = false;
+            }
+        }
+        
+        if (IsPrime)
+        {
+            System.out.println("The given number is prime.");
+        }
+        else
+                        System.out.println("The given number is not prime.");
+
+    }
+    
+}
+
